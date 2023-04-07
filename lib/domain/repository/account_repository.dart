@@ -1,5 +1,5 @@
-import 'package:exeditec_auth_client/data/data.dart';
-import 'package:exeditec_auth_client/domain/domain.dart';
+import 'package:e_auth_client/data/data.dart';
+import 'package:e_auth_client/domain/domain.dart';
 
 class AccountRepository {
   AccountRepository({required this.client});

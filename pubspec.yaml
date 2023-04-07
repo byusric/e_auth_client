@@ -1,7 +1,7 @@
 name: e_auth_client
 description: A Flutter package for auth projects with jwtTokens .
 version: 0.0.1
-homepage: https
+homepage: https://github.com/byusric/e_auth_client
 
 environment:
   sdk: '>=2.19.2 <3.0.0'

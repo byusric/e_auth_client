@@ -5,18 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "exeditec_auth_client",
+            "name": "e_auth_client",
             "request": "launch",
             "type": "dart"
         },
         {
-            "name": "exeditec_auth_client (profile mode)",
+            "name": "e_auth_client (profile mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "profile"
         },
         {
-            "name": "exeditec_auth_client (release mode)",
+            "name": "e_auth_client (release mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "release"

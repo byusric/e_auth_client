@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
-import 'package:exeditec_auth_client/config/constants.dart';
-import 'package:exeditec_auth_client/domain/domain.dart';
+import 'package:e_auth_client/config/constants.dart';
+import 'package:e_auth_client/domain/domain.dart';
 
 Dio createDioInstance(String apiKey) {
   final dio = Dio(dioOptions);

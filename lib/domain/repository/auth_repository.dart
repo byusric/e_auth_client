@@ -1,7 +1,7 @@
 import 'dart:developer';
 
-import 'package:exeditec_auth_client/data/data.dart';
-import 'package:exeditec_auth_client/domain/domain.dart';
+import 'package:e_auth_client/data/data.dart';
+import 'package:e_auth_client/domain/domain.dart';
 
 class AuthRepository {
   AuthRepository({required this.client});

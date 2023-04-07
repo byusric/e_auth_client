@@ -1,9 +1,9 @@
-library exeditec_auth_client;
+library e_auth_client;
 
 import 'package:dio/dio.dart';
-import 'package:exeditec_auth_client/domain/domain.dart';
-import 'package:exeditec_auth_client/domain/repository/account_repository.dart';
-import 'package:exeditec_auth_client/domain/repository/auth_repository.dart';
+import 'package:e_auth_client/domain/repository/account_repository.dart';
+import 'package:e_auth_client/domain/domain.dart';
+import 'package:e_auth_client/domain/repository/auth_repository.dart';
 
 class ExeditecAuthClient {
   late final ApiInstance _dioInstance;
