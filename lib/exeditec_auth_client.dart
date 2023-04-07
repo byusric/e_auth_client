@@ -1,25 +1,21 @@
 library exeditec_auth_client;
 
 import 'package:dio/dio.dart';
-import 'package:exeditec_auth_client/domain/dio_instance.dart';
-import 'package:exeditec_auth_client/domain/shared_pref.dart';
+import 'package:exeditec_auth_client/domain/domain.dart';
+import 'package:exeditec_auth_client/domain/repository/account_repository.dart';
+import 'package:exeditec_auth_client/domain/repository/auth_repository.dart';
 
 class ExeditecAuthClient {
-  static final ExeditecAuthClient _instance = ExeditecAuthClient._internal();
+  late final ApiInstance _dioInstance;
+  final String apiKey;
 
-  factory ExeditecAuthClient(String apiKey) {
-    _instance.apiKey = apiKey;
-    return _instance;
-  }
-
-  ExeditecAuthClient._internal() {
+  ExeditecAuthClient(this.apiKey) {
     SharedPref();
-    _dioInstance = createDioInstance(apiKey);
+    _dioInstance = ApiInstance(createDioInstance(apiKey));
   }
 
-  late final String apiKey;
+  Dio get dio => createDioInstance(apiKey);
 
-  late final Dio _dioInstance;
-
-  Dio get dio => _dioInstance;
+  AccountRepository get account => AccountRepository(client: _dioInstance);
+  AuthRepository get auth => AuthRepository(client: _dioInstance);
 }

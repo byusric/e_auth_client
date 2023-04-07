@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:exeditec_auth_client/domain/shared_pref.dart';
+import 'package:exeditec_auth_client/domain/domain.dart';
 
 class TokenInterceptor extends Interceptor {
   const TokenInterceptor({required this.pref, required this.instance});
